@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <style>
+    body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        min-height: 100vh;
+        background-color: #f9f9f9;
+        background-image: radial-gradient(#ccc 1px, transparent 1px);
+        background-size: 20px 20px;
+    }
+
+    .heading{
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+        text-align: center;
+    }
+    #subheading{
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 20px;
+        color: #666;
+        text-align: center;
+    }
+    label{
+        font-weight: 600;
+        display: block;
+        margin: 12px 0 6px;
+        color: #444;
+    }
+    .card {
+        background: #fff;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        max-width: 600px;
+        margin: auto;
+        text-align: left;
+        padding: 30px;
+        border-radius: 16px;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"],
+    select,
+    textarea,
+    input[type="submit"] {
+        display: block;
+        width: 100%;  
+        padding: 8px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+}
+    </style>
+    <div class="card" id="card">
+        <div class="heading" id="heading">Registration Form</div>
+        <br>
+        <div class="subheading" id="subheading">Please fill in the form below</div>
+        <br>
+        <form action="/register" method="post">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" required>
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone-number">Phone Number</label>
+            <input type="number" id="phone-number" name="phone-number" required>
+
+            <label for="gender">Gender</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="gender" id="gender-male" required>Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" id="gender-female" required>Female
+                </label>
+            </div>
+            
+            <label for="hobbies">Hobbies</label>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" id="hobby-audiorelated">Audio Related
+                </label>
+                <label>
+                    <input type="checkbox" id="hobby-musicrelated">Music Related
+                </label>
+                <label>
+                    <input type="checkbox" id="hobby-technologyrelated">Technology Related
+                </label>
+                <label>
+                    <input type="checkbox" id="hobby-isrelated">Information Systems Related
+                </label>
+            </div>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="studyprogram">Program of Study</label>
+            <select id="studyprogram" name="studyprogram" required>
+                <option value="IS">Information Systems</option>
+                <option value="BA">Business Analytics</option>
+                <option value="BIT">Business Information Technology</option>
+                <option value="MTISM">Master of Information Systems Management</option>
+            </select>
+
+            <label for="address">Full Address:</label>
+            <textarea id="address" name="address" rows="4" placeholder="Enter your address here..." required></textarea>
+            <br>
+            
+            <label for="study-program">Program of Study</label>
+            <select id="study-program" name="study-program" required>
+                <option value="IS">Information Systems</option>
+                <option value="BA">Business Analytics</option>
+                <option value="BIT">Business Information Technology</option>
+                <option value="MTISM">Master of Information Systems Management</option>
+
+            <input type="submit" value="Submit">
+        </form>
+
+
+
+</body>
+</html>
