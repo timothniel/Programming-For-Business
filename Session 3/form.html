@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1 class="heading">Registration Form</h1>
+
+        <form action="/register" method="post">
+            <label for="full-name">Full Name</label>
+            <br>
+            <input type="text" id="full-name" required>
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="text" id="email" required>
+            <br>
+            <label for="phone-number">Phone Number</label>
+            <br>
+            <input type="text" id="phone-number" required>
+            <br>
+
+            <label for="gender">Gender</label>
+            <br>
+            <label>
+                <input type="radio" id="gender-male" name="gender" value="male" required> Male
+            </label>
+            <br>
+            <label>
+                <input type="radio" id="gender-female" name="gender" value="female" required> Female
+            </label>
+            <br>
+
+            <label for="hobbies">Hobbies</label>
+            <br>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" id="hobby-1"required>Audio Related
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="hobby-2"required>Music Related
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="hobby-3"required>Technology Related
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="hobby-4"required>Information-Systems Related
+                </label>
+                <br>
+            </div>
+            
+
+            <label for="dob">Date of Birth</label>
+            <br>
+            <input type="date" id="dob" required>
+            <br>
+
+            <label for="study-program">Program of Study</label>
+            <br>
+            <select id="study-program" name="study-program" required>
+                <option value="IS">Information Systems</option>
+                <option value="BA">Business Analytics</option>
+                <option value="BIT">Business Information Technology</option>
+                <option value="MTISM">Master of Information Systems Management</option>
+            </select>
+            <br>
+            
+            <label for="full-address">Full Address</label>
+            <br>
+            <textarea id="full-address" rows="4" cols="50" required></textarea>
+            <br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+</body>
+</html>
